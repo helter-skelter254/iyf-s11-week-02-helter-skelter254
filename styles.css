@@ -85,7 +85,7 @@ nav a {
     font-size: var(--font-sm);
 }
 
-nav a:hover {
+nav a:hover {s
     color: var(--color-primary-light); /* light blue on hover */
     text-decoration: none;
 }
