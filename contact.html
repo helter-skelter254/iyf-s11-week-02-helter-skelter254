@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Kariuki - Contact</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>Contact Me</h1>
+    <p>Have a question or want to work together? Fill out the form below.</p>
+
+    <form action="#" method="POST">
+
+        <!-- Personal Info Group -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name *</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email Address *</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="phone">Phone Number (optional)</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+254 700 000000"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Message Group -->
+        <fieldset>
+            <legend>Your Message</legend>
+
+            <label for="subject">Subject *</label><br>
+            <select id="subject" name="subject" required>
+                <option value="">-- Select a subject --</option>
+                <option value="general">General Enquiry</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="feedback">Feedback</option>
+            </select><br><br>
+
+            <label for="message">Message *</label><br>
+            <textarea id="message" name="message" placeholder="Write your message here (min 50 characters)..." minlength="50" rows="6" cols="40" required></textarea><br><br>
+
+            <label>
+                <input type="checkbox" name="newsletter">
+                Subscribe to my newsletter
+            </label><br><br>
+        </fieldset>
+
+        <br>
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</body>
+</html>
