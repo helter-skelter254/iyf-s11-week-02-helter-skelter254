@@ -1,0 +1,108 @@
+/* ===== RESET - removes default browser styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== GOOGLE FONT - imports Poppins for headings, Open Sans for body ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* ===== BASE STYLES - applied to the whole page ===== */
+body {
+    font-family: 'Open Sans', sans-serif; /* body font */
+    font-size: 16px;                      /* base font size */
+    line-height: 1.6;                     /* space between lines */
+    color: #333333;                       /* dark gray text */
+    background-color: #ffffff;            /* white background */
+}
+
+/* ===== COLOR VARIABLES - your color scheme ===== */
+:root {
+    --color-primary: #2563eb;        /* blue - main brand color */
+    --color-secondary: #10b981;      /* green - accent color */
+    --color-background: #f9fafb;     /* light gray background */
+    --color-text: #333333;           /* dark text */
+    --color-muted: #6b7280;          /* gray - for less important text */
+    --color-primary-light: #93c5fd;  /* light blue */
+    --color-primary-dark: #1d4ed8;   /* dark blue */
+}
+
+/* ===== FONT SIZE VARIABLES - your typography scale ===== */
+:root {
+    --font-xs: 0.75rem;    /* 12px */
+    --font-sm: 0.875rem;   /* 14px */
+    --font-base: 1rem;     /* 16px */
+    --font-lg: 1.125rem;   /* 18px */
+    --font-xl: 1.25rem;    /* 20px */
+    --font-2xl: 1.5rem;    /* 24px */
+    --font-3xl: 1.875rem;  /* 30px */
+    --font-4xl: 2.25rem;   /* 36px */
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* heading font */
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+h1 { font-size: var(--font-4xl); } /* biggest heading */
+h2 { font-size: var(--font-3xl); }
+h3 { font-size: var(--font-2xl); }
+
+/* ===== PARAGRAPHS ===== */
+p {
+    font-size: var(--font-base);
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+/* ===== LINKS ===== */
+a {
+    color: var(--color-primary);     /* blue links */
+    text-decoration: none;           /* removes underline */
+}
+
+a:hover {
+    color: var(--color-primary-dark); /* darker blue on hover */
+    text-decoration: underline;       /* underline on hover */
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    background-color: var(--color-primary); /* blue background */
+    padding: 1rem 2rem;
+    display: flex;                          /* puts items in a row */
+    justify-content: space-between;         /* logo left, links right */
+    align-items: center;                    /* vertically centered */
+}
+
+nav a {
+    color: #ffffff;          /* white links in nav */
+    margin-left: 1.5rem;     /* space between links */
+    font-size: var(--font-sm);
+}
+
+nav a:hover {
+    color: var(--color-primary-light); /* light blue on hover */
+    text-decoration: none;
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+main {
+    max-width: 1100px;    /* limits width on large screens */
+    margin: 0 auto;       /* centers the content */
+    padding: 2rem;        /* space around content */
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--color-text); /* dark background */
+    color: #ffffff;                       /* white text */
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: var(--font-sm);
+}
