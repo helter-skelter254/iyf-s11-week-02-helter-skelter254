@@ -14,7 +14,7 @@ body {
     font-size: 16px;                      /* base font size */
     line-height: 1.6;                     /* space between lines */
     color: #333333;                       /* dark gray text */
-    background-color: #ffffff;     /* white background */
+    background-color: #faf9f9e6;     /* white background */
 }
 
 /* ===== COLOR VARIABLES - your color scheme ===== */
@@ -61,22 +61,34 @@ p {
 
 /* ===== NAVIGATION ===== */
 nav {
-    background-color: var(--color-primary); /* dark background for nav */
+    background-color: var(--color-primary);
     padding: 1rem 2rem;
-    display  : flex;
-    justify-content: flex-start;  /* changed from space-between */
-    align-items: center;
-    gap: 2rem;                /* added - clean spacing between links */
+    display: flex;
+    justify-content: space-between;  /* logo left, links right */
+    align-items: center;             /* vertically centered */
 }
 
-nav a {
-    color: #ffffff;
+.logo {
+    color: #1f05059f;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-lg);
+    font-weight: 900;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;          /* space between links */
+    align-items: center;
+}
+
+.nav-links a {
+    color: #12010174;
     font-size: var(--font-sm);
 }
 
-nav a:hover {
+.nav-links a:hover {
     color: var(--color-primary-light);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* ===== MAIN CONTENT AREA ===== */
@@ -117,10 +129,21 @@ form {
     justify-content: center; /* center the form */
     padding-left: 1rem; /* added padding to the left */
 }
-body {
-    font-family: 'Open Sans', sans-serif; /* body font */
-    font-size: 16px;                      /* base font size */
-    line-height: 1.6;                     /* space between lines */
-    color: #333333;                       /* dark gray text */
-    background-color: var(--color-background);     /* white background */
+.projects-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.projects-grid article {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #6c6b6b97;
+}
+.projects-grid img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
 }
