@@ -14,7 +14,7 @@ body {
     font-size: 16px;                      /* base font size */
     line-height: 1.6;                     /* space between lines */
     color: #333333;                       /* dark gray text */
-    background-color: #ffffff;            /* white background */
+    background-color: #ffffff;     /* white background */
 }
 
 /* ===== COLOR VARIABLES - your color scheme ===== */
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text);
 }
 
-h1 { font-size: var(--font-4xl); } /* biggest heading */
+h1 { font-size: var(--font-4xl);} /* biggest heading */
 h2 { font-size: var(--font-3xl); }
 h3 { font-size: var(--font-2xl); }
 
@@ -59,50 +59,68 @@ p {
     color: var(--color-text);
 }
 
-/* ===== LINKS ===== */
-a {
-    color: var(--color-primary);     /* blue links */
-    text-decoration: none;           /* removes underline */
-}
-
-a:hover {
-    color: var(--color-primary-dark); /* darker blue on hover */
-    text-decoration: underline;       /* underline on hover */
-}
-
 /* ===== NAVIGATION ===== */
 nav {
-    background-color: var(--color-primary); /* blue background */
+    background-color: var(--color-primary); /* dark background for nav */
     padding: 1rem 2rem;
-    display: flex;                          /* puts items in a row */
-    justify-content: space-between;         /* logo left, links right */
-    align-items: center;                    /* vertically centered */
+    display  : flex;
+    justify-content: flex-start;  /* changed from space-between */
+    align-items: center;
+    gap: 2rem;                /* added - clean spacing between links */
 }
 
 nav a {
-    color: #ffffff;          /* white links in nav */
-    margin-left: 1.5rem;     /* space between links */
+    color: #ffffff;
     font-size: var(--font-sm);
 }
 
-nav a:hover {s
-    color: var(--color-primary-light); /* light blue on hover */
-    text-decoration: none;
+nav a:hover {
+    color: var(--color-primary-light);
+    text-decoration: underline;
 }
 
 /* ===== MAIN CONTENT AREA ===== */
 main {
-    max-width: 1100px;    /* limits width on large screens */
-    margin: 0 auto;       /* centers the content */
-    padding: 2rem;        /* space around content */
+    max-width: 1200px; /* limit width for better readability */
 }
 
 /* ===== FOOTER ===== */
 footer {
-    background-color: var(--color-text); /* dark background */
+    background-color: var(--color-muted); /* dark background */
     color: #ffffff;                       /* white text */
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
     font-size: var(--font-sm);
+}
+section {
+    margin-bottom: 0.5rem; /* space between sections */
+    padding-left: 1.5rem; /* added padding to the left */
+    font-size: var(--font-base); /* consistent font size */
+    padding: 1rem; /* added padding for better spacing */
+}
+ul {
+    list-style-type: disc; /* bullet points */
+    margin-left: 2rem;     /* indent for better readability */
+}
+article {
+    margin-bottom: 2rem; /* space between articles */
+    padding: 1rem;       /* padding for better spacing */
+    background-color: var(--color-background); /* light background for articles */
+    border-radius: 8px;  /* rounded corners */
+}
+form {
+    display: flex;
+    flex-direction: column; /* stack form elements vertically */
+    gap: 0.5rem;              /* space between form elements */
+    max-width: 700px;       /* limit form width */
+    justify-content: center; /* center the form */
+    padding-left: 1rem; /* added padding to the left */
+}
+body {
+    font-family: 'Open Sans', sans-serif; /* body font */
+    font-size: 16px;                      /* base font size */
+    line-height: 1.6;                     /* space between lines */
+    color: #333333;                       /* dark gray text */
+    background-color: var(--color-background);     /* white background */
 }
